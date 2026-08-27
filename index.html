@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casfira — Supporto</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800&display=swap">
+<style>
+  :root {
+    --bg: #F6F4F0; --surface: #FFFFFF; --border: #E7E2DA;
+    --ink: #23201B; --muted: #7A756C; --petrol: #16323D; --accent: #D2622A;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161A; --surface: #1A2329; --border: #243038;
+      --ink: #F2EFEA; --muted: #8FA3AD; --petrol: #0C2129; --accent: #E58F70;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: 'Archivo', system-ui, sans-serif; line-height: 1.6;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 56px 22px 72px; }
+  .logo {
+    width: 56px; height: 56px; border-radius: 14px; background: #16323D;
+    display: flex; align-items: center; justify-content: center;
+    color: #F6F4F0; font-size: 30px; font-weight: 800;
+  }
+  h1 { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; margin: 20px 0 6px; }
+  .tagline { color: var(--muted); margin: 0 0 32px; font-size: 16px; }
+  h2 { font-size: 19px; font-weight: 700; margin: 32px 0 8px; }
+  p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+  a { color: var(--accent); font-weight: 600; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 20px 22px; margin: 16px 0;
+  }
+  .card p { margin: 0; }
+  footer { margin-top: 48px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">C</div>
+  <h1>Casfira</h1>
+  <p class="tagline">La tua auto, tutto in ordine. Scadenze, spese e documenti in un posto solo.</p>
+
+  <h2>Supporto</h2>
+  <div class="card">
+    <p>Hai trovato un problema o hai un suggerimento? Scrivici:
+    <a href="https://github.com/ciboandre/casfira-site/issues/new">segnala un problema</a>.</p>
+  </div>
+
+  <h2>Domande frequenti</h2>
+  <div class="card">
+    <p><strong style="color: var(--ink)">Dove sono salvati i miei dati?</strong><br>
+    Solo sul tuo telefono. Casfira non ha account né server: auto, scadenze, spese e
+    documenti restano sul tuo dispositivo e nei suoi backup.</p>
+  </div>
+  <div class="card">
+    <p><strong style="color: var(--ink)">Non ricevo le notifiche delle scadenze.</strong><br>
+    Controlla che le notifiche di Casfira siano attive in Impostazioni&nbsp;&rarr;&nbsp;Notifiche&nbsp;&rarr;&nbsp;Casfira.</p>
+  </div>
+
+  <p><a href="privacy.html">Informativa sulla privacy</a></p>
+
+  <footer>© 2026 Casfira</footer>
+</div>
+</body>
+</html>
